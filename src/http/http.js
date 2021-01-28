@@ -20,8 +20,16 @@ function Edit() {
     method: "post"
   })
 }
+//商品管理
+function pages(pageNum) {
+  return insteace({
+    url: `manage/product/list.do?pageNum=${pageNum}`,
+    method: "get"
+  })
+}
 //注册接口
 export default {
   login,
-  Edit
+  Edit,
+  pages
 }

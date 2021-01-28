@@ -35,6 +35,18 @@ const routes = [
       }, {
         redirect: "/hollerword",
         path: '/'
+      },
+      //商品管理
+      {
+        path: '/goods',
+        name: 'goods',
+        component: () => import('@/views/goods/goods'),
+        meta: {
+          keepAlive: true,
+          break: [{
+            name: "商品管理"
+          }]
+        }
       }
     ]
   },

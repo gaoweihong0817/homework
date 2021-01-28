@@ -6,7 +6,7 @@ import './plugins/element.js'
 
 import axios from './http/http'
 Vue.prototype.$axios = axios
-
+// axios.defaults.withCredentials = true
 
 // //面包屑
 router.beforeEach((to, from, next) => {
